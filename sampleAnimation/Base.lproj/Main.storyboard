@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sampleAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gx1-o2-psy">
+                                <rect key="frame" x="20" y="144" width="374" height="618"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_armenia" translatesAutoresizingMaskIntoConstraints="NO" id="BAO-0D-g1f">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="618"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4_argentina" translatesAutoresizingMaskIntoConstraints="NO" id="z8S-iT-bQu">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="618"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ph-9T-QXY">
+                                        <rect key="frame" x="0.0" y="298" width="374" height="22"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="zAY-rp-GTH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="z8S-iT-bQu" secondAttribute="trailing" id="2VV-hS-e4v"/>
+                                    <constraint firstAttribute="trailing" secondItem="BAO-0D-g1f" secondAttribute="trailing" id="5KN-Jt-Gbl"/>
+                                    <constraint firstAttribute="bottom" secondItem="z8S-iT-bQu" secondAttribute="bottom" id="93b-Tm-BX7"/>
+                                    <constraint firstItem="9ph-9T-QXY" firstAttribute="leading" secondItem="gx1-o2-psy" secondAttribute="leading" id="B7c-RO-xC8"/>
+                                    <constraint firstItem="z8S-iT-bQu" firstAttribute="leading" secondItem="gx1-o2-psy" secondAttribute="leading" id="Ixt-jE-lhh"/>
+                                    <constraint firstAttribute="trailing" secondItem="9ph-9T-QXY" secondAttribute="trailing" id="NH4-qr-eQm"/>
+                                    <constraint firstItem="z8S-iT-bQu" firstAttribute="top" secondItem="gx1-o2-psy" secondAttribute="top" id="eJ9-n4-FWL"/>
+                                    <constraint firstItem="9ph-9T-QXY" firstAttribute="centerY" secondItem="gx1-o2-psy" secondAttribute="centerY" id="hNF-WZ-Xzm"/>
+                                    <constraint firstAttribute="bottom" secondItem="BAO-0D-g1f" secondAttribute="bottom" id="iw3-iS-NR4"/>
+                                    <constraint firstItem="BAO-0D-g1f" firstAttribute="leading" secondItem="gx1-o2-psy" secondAttribute="leading" id="mdg-5W-GpM"/>
+                                    <constraint firstItem="BAO-0D-g1f" firstAttribute="top" secondItem="gx1-o2-psy" secondAttribute="top" id="rl1-8W-zdo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gx1-o2-psy" secondAttribute="trailing" constant="20" id="95E-8y-alG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gx1-o2-psy" secondAttribute="bottom" constant="100" id="Ekx-G8-rDQ"/>
+                            <constraint firstItem="gx1-o2-psy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="R4p-Aq-ebC"/>
+                            <constraint firstItem="gx1-o2-psy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zfl-85-0yN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cnstCenter" destination="hNF-WZ-Xzm" id="YbI-f6-bcV"/>
+                        <outlet property="imageView2" destination="z8S-iT-bQu" id="vZF-Iz-Igd"/>
+                        <outlet property="imgView1" destination="BAO-0D-g1f" id="eZx-kJ-FqI"/>
+                        <outlet property="scrollerView" destination="9ph-9T-QXY" id="euk-Jf-IBw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1_armenia" width="257" height="164"/>
+        <image name="4_argentina" width="257" height="164"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
